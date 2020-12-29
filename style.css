@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container1 {
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(112, 112, 240);
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.hamburger {
+
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+}
+
+.loading {
+    display: none;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    line-height: 2;
+}
+
+.input>h2 {
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+input {
+    font-size: 1.2rem;
+    padding: 5px;
+    outline: none;
+    border: 1px solid black;
+}
+
+input:hover {
+    border: 1px solid rgb(112, 112, 240);
+}
+
+button {
+    padding: 7px;
+    position: relative;
+    top: -2px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 2px solid rgb(112, 112, 240);
+    ;
+    outline: none;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(112, 112, 240);
+    color: white;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.suggested {
+    color: white;
+    background-color: rgb(112, 112, 240);
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid white;
+    margin: 5px;
+
+}
+
+.name {
+    font-weight: 600;
+    text-align: left;
+    font-size: larger;
+}
+
+.save-btn {
+    margin-top: 20px;
+}
+
+.saveword {
+    display: none;
+}
+
+@media (min-width:500px) {
+    .hamburger {
+
+        right: 50px;
+
+    }
+
+}
